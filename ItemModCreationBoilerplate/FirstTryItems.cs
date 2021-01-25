@@ -1,6 +1,6 @@
 ﻿using BepInEx;
-using ItemModCreationBoilerplate.Equipment;
-using ItemModCreationBoilerplate.Items;
+using FirstTryItems.Equipment;
+using FirstTryItems.Items;
 using R2API;
 using R2API.Utils;
 using System.Collections.Generic;
@@ -8,16 +8,16 @@ using System.Linq;
 using System.Reflection;
 using UnityEngine;
 
-namespace ItemModCreationBoilerplate
+namespace FirstTryItems
 {
     [BepInPlugin(ModGuid, ModName, ModVer)]
     [BepInDependency(R2API.R2API.PluginGUID, R2API.R2API.PluginVersion)]
     [NetworkCompatibility(CompatibilityLevel.EveryoneMustHaveMod, VersionStrictness.EveryoneNeedSameModVersion)]
     [R2APISubmoduleDependency(nameof(ItemAPI), nameof(LanguageAPI), nameof(ResourcesAPI))]
-    public class Main : BaseUnityPlugin
+    public class FirstTryItems : BaseUnityPlugin
     {
-        public const string ModGuid = "com.MyUsername.MyModName";
-        public const string ModName = "My Mod's Title and if we see this exact name on Thunderstore we will deprecate your mod";
+        public const string ModGuid = "com.gaforb.FirstTryItems";
+        public const string ModName = "FirstTryItems";
         public const string ModVer = "0.0.1";
 
         public static AssetBundle MainAssets;
@@ -30,7 +30,7 @@ namespace ItemModCreationBoilerplate
             // Don't know how to create/use an asset bundle, or don't have a unity project set up?
             // Look here for info on how to set these up: https://github.com/KomradeSpectre/AetheriumMod/blob/rewrite-master/Tutorials/Item%20Mod%20Creation.md#unity-project
 
-            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("ItemModCreationBoilerplate.my_assetbundlefile"))
+            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("FirstTryItems.firsttryitems_assets"))
             {
                 MainAssets = AssetBundle.LoadFromStream(stream);
                 var provider = new AssetBundleResourcesProvider($"@{ModName}", MainAssets);

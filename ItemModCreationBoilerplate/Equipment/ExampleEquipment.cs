@@ -2,7 +2,7 @@
 using R2API;
 using RoR2;
 
-namespace ItemModCreationBoilerplate.Equipment
+namespace FirstTryItems.Equipment
 {
     public class ExampleEquipment : EquipmentBase
     {

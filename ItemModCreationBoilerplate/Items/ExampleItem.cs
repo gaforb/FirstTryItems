@@ -2,7 +2,7 @@
 using R2API;
 using RoR2;
 
-namespace ItemModCreationBoilerplate.Items
+namespace FirstTryItems.Items
 {
     public class ExampleItem : ItemBase
     {

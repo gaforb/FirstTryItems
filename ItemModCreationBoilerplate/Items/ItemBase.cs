@@ -3,7 +3,7 @@ using R2API;
 using RoR2;
 using System.Collections.Generic;
 
-namespace ItemModCreationBoilerplate.Items
+namespace FirstTryItems.Items
 {
     public abstract class ItemBase
     {
@@ -50,7 +50,7 @@ namespace ItemModCreationBoilerplate.Items
 
         public abstract ItemDisplayRuleDict CreateItemDisplayRules();
 
-        public virtual void CreateConfig(ConfigFile config) { };
+        public virtual void CreateConfig(ConfigFile config) { }
         protected void CreateItem()
         {
             if (AIBlacklisted)

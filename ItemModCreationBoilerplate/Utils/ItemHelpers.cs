@@ -1,7 +1,7 @@
 ﻿using RoR2;
 using UnityEngine;
 
-namespace ItemModCreationBoilerplate.Utils
+namespace FirstTryItems.Utils
 {
     internal class ItemHelpers
     {
