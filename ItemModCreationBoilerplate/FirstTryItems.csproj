@@ -6,7 +6,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Equipment\ExampleEquipment.cs" />
+    <Compile Remove="Items\ExampleItem.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="firsttryitems_assets" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="firsttryitems_assets" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="libs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Equipment\ExampleEquipment.cs" />
+    <None Include="Items\ExampleItem.cs" />
   </ItemGroup>
 
   <ItemGroup>
