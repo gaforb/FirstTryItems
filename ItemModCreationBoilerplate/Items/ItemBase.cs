@@ -1,7 +1,6 @@
 ﻿using BepInEx.Configuration;
 using R2API;
 using RoR2;
-using System;
 using System.Collections.Generic;
 
 namespace FirstTryItems.Items
@@ -68,10 +67,14 @@ namespace FirstTryItems.Items
                 pickupModelPath = ItemModelPath,
                 pickupIconPath = ItemIconPath,
                 hidden = false,
-                tags = ItemTags,
                 canRemove = CanRemove,
                 tier = Tier
+
             };
+            if (ItemTags.Length > 0)
+            {
+                itemDef.tags = ItemTags;
+            }
             var itemDisplayRules = CreateItemDisplayRules();
             Index = ItemAPI.Add(new CustomItem(itemDef, itemDisplayRules));
         }

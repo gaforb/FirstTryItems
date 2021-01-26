@@ -23,11 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Equipment\ExampleEquipment.cs" />
-    <None Include="Items\ExampleItem.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="Assembly-CSharp">
       <HintPath>libs\Assembly-CSharp.dll</HintPath>
     </Reference>
