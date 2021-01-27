@@ -50,7 +50,7 @@ namespace FirstTryItems.Items
                 iconPath = "@FirstTryItems:Assets/Textures/Icons/Buff/chill.png"
             });
             Chilled = BuffAPI.Add(chilled);
-}
+        }
         
         public override ItemDisplayRuleDict CreateItemDisplayRules()
         {
@@ -75,15 +75,14 @@ namespace FirstTryItems.Items
                 {
                     int ItemCount = GetCount(attackerBody);
 
-                    //Not Implemented: Chance to chill
-                    if (ItemCount > 0 && self.body.GetBuffCount(Chilled) < ChillStacksFreeze - 1)
+                    //Not Implemented: Chance to chill, currently 100%
+                    if (ItemCount > 0 && self.body.GetBuffCount(Chilled) < ChillStacksFreeze)
                     {
                         self.body.AddTimedBuffAuthority(Chilled, ChillDuration * damageInfo.procCoefficient);
-                    }
-                    else
-                    {
-                        //Not Implemented: freezing
-                        self.body.ClearTimedBuffs(Chilled);
+                        if (self.body.GetBuffCount(Chilled) >= ChillStacksFreeze)
+                        {
+                            self.body.ClearTimedBuffs(Chilled);
+                        }
                     }
                 }
             }
@@ -91,4 +90,3 @@ namespace FirstTryItems.Items
         }
     }
 }
-
