@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 323939775
+CRC: 3739571663
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: cb1e9cbc473ecd30e4136ce792637fe9
+    Hash: 0c81d4d6975f59ec83f0b665ef27b94e
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 61eab76d03a5b9749b6033ba24619b3d
+    Hash: 3b4907a72e960bd2e4826b38c9d360d0
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -26,6 +26,8 @@ ClassTypes:
 - Class: 48
   Script: {instanceID: 0}
 - Class: 65
+  Script: {instanceID: 0}
+- Class: 213
   Script: {instanceID: 0}
 Assets:
 - Assets/Models/Prefabs/Item/Heatsink/Heatsink.prefab

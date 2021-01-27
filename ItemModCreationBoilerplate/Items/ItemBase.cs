@@ -14,7 +14,7 @@ namespace FirstTryItems.Items
         public abstract string ItemLore { get; }
 
         public abstract ItemTier Tier { get; }
-        public virtual ItemTag[] ItemTags { get; set; }
+        public virtual ItemTag[] ItemTags { get; set; } = new ItemTag[] { };
 
         public abstract string ItemModelPath { get; }
         public abstract string ItemIconPath { get; }

@@ -12,6 +12,8 @@
 
   <ItemGroup>
     <None Remove="firsttryitems_assets" />
+    <None Remove="ItemModCreationBoilerplate" />
+    <None Remove="ItemModCreationBoilerplate.manifest" />
   </ItemGroup>
 
   <ItemGroup>
